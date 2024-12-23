@@ -47,6 +47,7 @@ header {
   z-index: 9999;
   height: 70px;
   background-color: rgb(16, 65, 62);
+  justify-content: space-evenly;
 }
 
 header h2 {
@@ -62,20 +63,48 @@ header ul li a,
 .field-text-home h3 {
   color: rgb(94, 234, 212);
 }
-
+.language-switcher {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+.cccc {
+  display: flex;
+}
+#language-selector {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 header ul {
   position: absolute;
   right: 90px;
   margin-top: 5px;
+}
+header ul li {
+  list-style-type: none;
 }
 
 header ul li {
   display: inline;
   margin: 0px 12px;
 }
-
-header ul li {
-  list-style-type: none;
+.language-switcher {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin: 10px;
+}
+.language-switcher a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
+.language-switcher a:hover {
+  background-color: #f0f0f0;
 }
 
 header ul li a {
@@ -808,13 +837,10 @@ textarea:focus {
     width: 30%;
   }
 
-  /* CERTIFICATE MOBILE */
-
-  /* CONTACT MOBILE */
-
   .container-contact {
     width: 85%;
     flex-wrap: wrap;
+    display: grid;
   }
 
   .sosmed-and-maps {
