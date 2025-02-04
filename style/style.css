@@ -574,6 +574,8 @@ i {
 }
 
 .domain-and-contact a {
+  display: flex;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -586,9 +588,9 @@ iframe {
 
 .social-media {
   display: flex;
-  justify-content: center; /* Центрирует элементы по горизонтали */
-  align-items: center; /* Центрирует элементы по вертикали */
-  gap: 10px; /* Устанавливает расстояние между иконками (можно менять от 5px до 15px) */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .social-media i {
@@ -601,6 +603,7 @@ iframe {
     flex-direction: column; /* Иконки будут располагаться вертикально на мобильных */
     gap: 5%; /* Уменьшаем расстояние на мобильных */
     align-items: center; /* Центрируем элементы */
+    display: grid;
   }
 }
 
@@ -878,4 +881,30 @@ textarea:focus {
   }
 
   /* CONTACT MOBILE */
+}
+
+@media screen and (width: 768px) {
+  .social-media {
+    margin-left: -200px;
+  }
+}
+@media screen and (width: 820px) {
+  .social-media {
+    margin-left: -200px;
+  }
+}
+@media screen and (width: 1024px) {
+  .social-media {
+    margin-left: -150px;
+  }
+}
+@media screen and (width: 912px) {
+  .social-media {
+    margin-left: -170px;
+  }
+}
+@media screen and (min-width: 853px) and (max-width: 855px) {
+  .social-media {
+    margin-left: -200px;
+  }
 }
