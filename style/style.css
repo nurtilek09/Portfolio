@@ -366,8 +366,8 @@ header ul li a:hover {
 
 .field-project img {
   border-radius: 8px;
-  width: 30%;
-  min-height: 120px;
+  width: 45%;
+  min-height: 140px;
 }
 
 .field-text-project {
@@ -887,10 +887,45 @@ textarea:focus {
   .social-media {
     margin-left: -200px;
   }
+  header h2 {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    left: 10px;
+    display: none;
+    font-size: 20px;
+  }
+  .link-to-project {
+    display: grid;
+  }
+  .field-project img {
+    border-radius: 8px;
+    width: 100%;
+    min-height: 90px;
+  }
+  .certification {
+    display: none;
+  }
 }
 @media screen and (width: 820px) {
   .social-media {
     margin-left: -200px;
+  }
+  header h2 {
+    display: none;
+  }
+  .field-project {
+    display: grid;
+  }
+  .link-to-project {
+    display: grid;
+  }
+  .field-project img {
+    border-radius: 8px;
+    width: 100%;
+    min-height: 90px;
+  }
+  .certification {
+    display: none;
   }
 }
 @media screen and (width: 1024px) {
@@ -901,6 +936,23 @@ textarea:focus {
 @media screen and (width: 912px) {
   .social-media {
     margin-left: -170px;
+  }
+  .link-to-project {
+    display: grid;
+  }
+  .field-project img {
+    border-radius: 8px;
+    width: 100%;
+    min-height: 90px;
+  }
+  .certification {
+    display: none;
+  }
+  header h2 {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    left: 40px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 853px) and (max-width: 855px) {
